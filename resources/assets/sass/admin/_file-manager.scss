@@ -1,0 +1,408 @@
+/*****************************  MODAL FILE  MANAGER ******************/
+#file-manager-modal {
+  position: fixed;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  top: 5% !important;
+  left: 5%;
+  width: 90% !important;
+  height: 90% !important;
+  border-radius: 0;
+  overflow: auto;
+  border: 0;
+  background-color: #F5F5F5;
+}
+
+#file-manager-modal .modal-content {
+  position: relative;
+  z-index: 10;
+  margin: 70px 297px 70px 20px;
+  overflow: auto;
+  min-height: 72%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #F5F5F5;
+  border: 0px;
+}
+
+#file-manager-modal button.close {
+  color: #2c2c2c;
+  margin-top: 13px;
+  opacity: 1;
+  &:hover {
+    color: #000;
+  }
+}
+
+#file-manager-modal .modal-header {
+  position: fixed;
+  z-index: 20;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 50px;
+  padding: 0;
+  border-width: 0 0 1px;
+  border-color: #9b9b9b;
+  border-style: solid;
+  background-color: #fff;
+  box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.1);
+}
+
+#file-manager-modal .header-inner {
+  padding: 0 20px;
+}
+
+#file-manager-modal .modal-header h4 {
+  margin: 0 40px 0 0;
+  float: left;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 200;
+  color: #333;
+}
+
+#file-manager-modal .modal-header .head-menu {
+  float: left;
+  height: 50px;
+  line-height: 50px;
+}
+
+#file-manager-modal .modal-header .head-menu li {
+  float: left;
+  margin: 13px 0 0 14px;
+  padding-left: 14px;
+  height: 26px;
+  border-left: 1px solid #ccc;
+  line-height: 26px;
+}
+
+#file-manager-modal .modal-header .head-menu li a {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+#file-manager-modal .modal-header .head-menu li a:hover {
+  color: #4ea4cf;
+}
+
+#file-manager-modal .modal-header .head-menu li:first-child {
+  margin-left: 0;
+  padding-left: 0;
+  border-left: 0;
+}
+
+#file-manager-modal .modal-header .head-menu li.active a {
+  color: #333;
+  font-weight: bold;
+}
+
+#file-manager-modal .modal-header .head-menu li.active a:hover {
+}
+
+#file-manager-modal .file-manager-modal-footer {
+  display: none;
+}
+
+#file-manager-modal #modal-sidebar {
+  position: fixed;
+  z-index: 10;
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  padding: 70px 10px 70px;
+  width: 267px;
+  overflow: auto;
+  background: none repeat scroll 0 0 #F5F5F5;
+  border-left: 1px solid #DFDFDF;
+}
+
+#modal-sidebar #form-page .container-fluid .inside-well {
+  background-color: transparent;
+  padding: 0px 0 10px;
+}
+
+#modal-sidebar #form-page .container-fluid .block-title {
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 3px;
+}
+
+#modal-sidebar #form-page .container-fluid .submit-the-form {
+  margin-top: 5px;
+}
+
+#modal-sidebar #form-page .container-fluid input,
+#modal-sidebar #form-page .container-fluid textarea {
+  width: 94%;
+  font-size: 12px;
+}
+
+#modal-sidebar #form-page .container-fluid textarea {
+  min-height: 40px;
+  height: 40px;
+  padding: 2px 5px;
+}
+
+#modal-sidebar #form-page .container-fluid .form-submit-well {
+  border-top: 0;
+}
+
+#modal-sidebar #form-page .container-fluid .btn-success {
+  width: 100%;
+}
+
+#modal-sidebar .preview {
+  padding: 10px;
+  margin: -19px -10px 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #eaeaea;
+  box-shadow: 0 1px 1px 0 rgba(100, 100, 100, 0.2);
+}
+
+#modal-sidebar .preview .image {
+  float: left;
+  width: 100px;
+  margin-right: 10px;
+}
+
+#modal-sidebar .preview .info {
+  float: left;
+  width: 157px;
+  font-size: 12px;
+}
+
+#modal-sidebar .preview .options {
+  margin: 10px -10px -10px;
+  padding: 0 10px;
+  border-top: 1px solid #e6e6e6;
+  height: 33px;
+  background-color: #fff;
+  overflow: hidden;;
+}
+
+#modal-sidebar .preview .options li {
+  float: left;
+  height: 33px;
+  margin-left: 15px;
+}
+
+#modal-sidebar .preview .options li:first-child {
+  margin-left: 0;
+}
+
+#modal-sidebar .preview .options li a {
+  display: block;
+  height: 33px;
+  line-height: 33px;
+  padding-top: 10px;
+  opacity: 0.6;
+  line-height: 29px;
+  text-align: center;
+}
+
+#modal-sidebar .preview .options li.delete a {
+  color: #f26c4f;
+  font-size: 13px;
+  padding-left: 25px;
+  line-height: 33px;
+  //background: url( img/media/bg-icon-delete.png ) no-repeat center left;
+}
+
+#modal-sidebar .preview .options li.edit a {
+  color: #333;
+  font-size: 13px;
+  padding-left: 25px;
+  line-height: 33px;
+  //background: url( img/media/bg-icon-edit.png ) no-repeat center left;
+}
+
+#modal-sidebar .preview .options li a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+#file-manager-modal #modal-footer {
+  position: fixed;
+  z-index: 20;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
+  height: 50px;
+  padding: 0;
+  border-width: 1px 0 0;
+  border-color: #9b9b9b;
+  border-style: solid;
+  background-color: #fff;
+  box-shadow: 0 4px -4px -4px rgba(0, 0, 0, 0.1);
+}
+
+#file-manager-modal #modal-footer .btn {
+  border-radius: 0;
+  margin: 6px 0 0 2px;
+  font-size: 1.0em;
+  padding: 8px 19px;
+  outline: none;
+}
+
+#file-manager-modal #modal-footer .btn:first-child {
+  margin-left: 10px;
+}
+
+#file-manager-modal #tab-upload {
+  margin: 4em 0;
+  text-align: center;
+}
+
+#file-manager-modal #tab-upload #upload-helper {
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: 0;
+  margin-top: -95px;
+  width: 100%;
+  height: 190px;
+
+}
+
+#file-manager-modal #tab-upload h3 {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 28px;
+  margin-bottom: 0.9em;
+  color: #333;
+}
+
+#file-manager-modal #tab-upload #select-files {
+  outline: none;
+}
+
+#queue-modal {
+  width: 100%;
+  min-height: 250px;
+  padding: 10px;
+}
+
+#queue-modal .uploadifive-queue-item {
+  display: none;
+}
+
+#upload-drop-queue div {
+  display: none;
+}
+
+#file-manager-modal .items-list {
+  overflow: hidden;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+#file-manager-modal .items-list li {
+  float: left;
+  margin: 8px;
+}
+
+#file-manager-modal .items-list li.selected {
+}
+
+#file-manager-modal .items-list li .preview {
+  position: relative;
+  z-index: 10;
+  display: block;
+  border: 1px solid #9f9f9f;
+  width: 140px;
+  height: 140px;
+  background-color: #fff;
+  outline: none;
+}
+
+#file-manager-modal .items-list li .preview.document {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) inset, 0 0 0 1px rgba(0, 0, 0, 0.05) inset;
+  //background: url( img/media/bg-media-type-document.png ) no-repeat center!important;
+}
+
+#file-manager-modal .items-list li .preview.document .label {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 12px;
+  border-radius: 0;
+  border-top: 1px solid #d3d3d3;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #666;
+  height: auto;
+  max-height: 100%;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+#file-manager-modal .items-list li .preview.document .label span {
+  display: block;
+  padding: 0 5px;
+  text-shadow: none;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#file-manager-modal .items-list li .preview .tick {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  margin-top: -38px;
+  margin-left: -46px;
+  width: 93px;
+  height: 76px;
+  //background: url( img/media/bg-active-media-item.png ) no-repeat;
+}
+
+#file-manager-modal .items-list li.selected .preview .tick {
+  display: block;
+}
+
+#file-manager-modal .items-list li.loading .preview {
+  //background: #fff url( img/common/ui-anim-basic-16x16.gif ) no-repeat center;
+}
+
+#file-manager-modal .items-list li .preview .pro {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 5px;
+  margin-top: -5px;
+  width: 130px;
+  height: 10px;
+  background-color: #000;
+}
+
+#file-manager-modal .items-list li .btn {
+  width: 140px;
+  border-radius: 0;
+  box-shadow: 0;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  outline: none;
+}
+
+#file-manager-modal .items-list li .preview .pro .bar {
+  width: 0;
+  height: 10px;
+  background-color: #d53c47;
+}
+
+#file-manager-modal .items-list li .preview:hover {
+
+}
+
+#file-manager-modal .items-list li.selected .preview:hover {
+}

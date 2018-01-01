@@ -1,0 +1,121 @@
+.btn {
+	font-weight: 700;
+	border: 3px solid transparent;
+	background: transparent;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 1em;
+	border-radius: $border-radius-button;
+	color: $color-text;
+	transition: color 0.3s, background-color 0.3s;
+
+	&.active,
+	&.focus,
+	&:active,
+	&:hover {
+		color: #fff;
+		border-color: $color-secondary;
+		text-decoration: none;
+		outline: none;
+		box-shadow: none;
+	}
+
+	&.btn-icon {
+		background-color: $color-secondary;
+		border-color: $color-secondary;
+		border: 0;
+		color: #fff;
+	}
+
+	&.btn-sm {
+		font-weight: 400;
+		border-width: 2px;
+	}
+
+	&.btn-lg {
+		border-width: 5px;
+	}
+
+	&.with-icon {
+		margin: 4px;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 39px;
+	}
+}
+
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+	cursor: not-allowed;
+	pointer-events: none;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	box-shadow: none;
+}
+
+.btn-default,
+a.btn-default {
+	color: $color-text;
+	border-color: transparent;
+	background-color: transparent;
+
+	&:active,
+	&:focus,
+	&:hover {
+		color: $color-text;
+		border-color: $color-text;
+		background: white;
+	}
+}
+
+.btn-primary,
+a.btn-primary {
+	color: $color-text-contrast;
+	border-color: $color-primary;
+	background-color: $color-primary;
+
+	&:active,
+	&:focus,
+	&:hover {
+		color: $color-primary;
+		border-color: $color-primary;
+		background-color: $color-text-contrast;
+	}
+}
+
+.btn-secondary,
+a.btn-secondary {
+	color: $color-text-contrast;
+	border-color: $color-secondary;
+	background-color: $color-secondary;
+
+	&:active,
+	&:focus,
+	&:hover {
+		color: $color-secondary;
+		border-color: $color-secondary;
+		background-color: $color-text-contrast;
+	}
+}
+
+.btn-accent,
+a.btn-accent {
+	color: $color-accent;
+	border-color: $color-accent;
+	background-color: white;
+
+	&:active,
+	&:focus,
+	&:hover {
+		color: $color-text;
+		border-color: $color-accent;
+		background-color: $color-accent;
+	}
+}
+
+.input-group-btn {
+    position: relative;
+    font-size: 1em;
+    white-space: nowrap;
+}

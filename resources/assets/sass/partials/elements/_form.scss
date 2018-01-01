@@ -1,0 +1,40 @@
+label {
+	&.required {
+		&:after {
+			content: '\f069';	// fa-asterisk
+			font-family: $font-family-icons;
+			margin-left: 0.5em;
+			color: $color-secondary;
+			font-weight: 400;
+		}
+	}
+}
+
+.form-group {
+	margin-bottom: 1em;
+}
+
+.form-control {
+	width: 100%;
+	height: auto;
+	padding: 0.75em 1em;
+	font-size: 1em;
+	line-height: 1.5em;
+	color: $color-text;
+	background-color: #fff;
+	background-image: none;
+	border: 2px solid lighten($color-4, 40);
+	border-radius: 0;
+	box-shadow: none;
+	@include animate();
+
+	&:focus {
+		border-color: $color-primary;
+		outline: 0;
+		box-shadow: none;
+	}
+}
+
+textarea {
+	resize: vertical;
+}

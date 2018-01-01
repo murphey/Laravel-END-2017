@@ -1,0 +1,18 @@
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Font Awesome
+@import "node_modules/font-awesome/css/font-awesome.min";
+
+// Plugin
+// @import "node_modules/jquery-colorbox/example4/colorbox";
+@import "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min";
+@import "node_modules/owl.carousel/dist/assets/owl.carousel.min";
+@import "node_modules/animate.css/animate.min";
+
+// GF plugins
+@import "resources/assets/plugins/pb-overlay/pb-overlay";
+@import "resources/assets/plugins/pb-suggest/pb-suggest";

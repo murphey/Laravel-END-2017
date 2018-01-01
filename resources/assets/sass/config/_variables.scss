@@ -1,0 +1,33 @@
+/*	colors	*/
+
+$color-background:		white;
+
+$color-text:			#303030;
+$color-text-contrast:	white; // used in contrast with primary and secondary color
+
+$color-primary:			#ff8040;
+$color-secondary:		#606060;
+$color-accent:			#FFe000;
+$color-4:				#6f6f6e;
+$color-5:				#f5f5f5;
+
+/*	font families	*/
+
+$font-family-text: 		"Open Sans", sans-serif;
+$font-family-title: 	"Raleway", sans-serif;
+$font-family-subtitle: 	"Open Sans", sans-serif;
+$font-family-icons:		"FontAwesome";
+
+/*	navbar 	*/
+$navbar-height: 100px;
+$navbar-height-content: 60px;
+$navbar-height-padding: ($navbar-height - $navbar-height-content) / 2;
+$navbar-height-mobile: 80px;
+$navbar-height-content-mobile: 30px;
+$navbar-height-padding-mobile: ($navbar-height-mobile - $navbar-height-content-mobile) / 2;
+$navbar-item-padding: 0 15px;
+$navbar-item-margin: 0 0;
+
+/*	misc	*/
+$border-radius-button:	0;
+$social-button-size: 35px;
